@@ -11,6 +11,29 @@ altJS: CoffeeScriptとか
 
 
 
+## 対応しているIDEとエディタ
+
+* WebStorm
+* PhpStorm
+
+	対応状況の確認
+
+	http://blog.jetbrains.com/webide/2013/02/typescript-support-in-webstorm-6/
+
+
+* Visual Studio Express 2012
+
+	http://www.microsoft.com/en-us/download/details.aspx?id=34790
+
+	無償開発環境 Visual Studio Express 2012 for Web
+	* for Windows 7
+	* for Windows 8
+
+* Sublime Text
+* Vim
+
+
+
 ## メリット
 
 * CoffeeScript とは違い、普通の JavaScript の記述に近いので導入しやすい
@@ -119,5 +142,34 @@ Grunt 使ってる人は
 * borisyankov/DefinitelyTyped
 
 [https://github.com/borisyankov/DefinitelyTyped](https://github.com/borisyankov/DefinitelyTyped)
+
+
+
+## TypeScript ドキュメント
+
+	http://typescript.codeplex.com/
+
+
+### PDF
+
+	http://typescript.codeplex.com/documentation
+
+	Offcial Manual PDF
+	http://www.typescriptlang.org/Content/TypeScript%20Language%20Specification.pdf
+
+
+## 基本構文
+## Backbone を使ってみる
+## GruntJS でタスク管理
+* Grunt Plugin
+
+## テスト
+* karma
+* jasmine
+* qunit
+
+
+## JSX
+
 
 
