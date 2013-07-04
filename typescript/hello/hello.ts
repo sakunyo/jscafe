@@ -16,5 +16,14 @@ console.log(hello());
 console.log(hello("string"));
 
 
-// console.log(hello(100));
+var myNumber = 100;
+// console.log(hello(myNumber));
+
+
+var myFunc = function () {};
+// console.log(hello(myFunc));
+
+
+var myObj  = {};
+// console.log(hello(myObj));
 
