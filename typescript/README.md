@@ -1,3 +1,9 @@
+<script type="text/javascript">
+(function(d, l){ l.setAttribute('rel', 'stylesheet');
+l.setAttribute('href', 'http://szk-engineering.com/markdown.css'); d.querySelector('head').appendChild(l); })(d = document, d.createElement('link'));
+</script>
+
+
 
 
 
@@ -24,25 +30,22 @@
 Microsoftがオープンソースとして公開している altJS の 型付け特化のコンパイラ  
 じつは去年の2012年に登場していました。
 
+割と色んな所で名前を目にする事が多く、日本語の記事もそれなりにあります  
 現在 (2013-07-01の時点では) v0.9、今年は業務で使われるケースが多くなりそう。
- 
-割と色んな所で名前を目にする事が多く、日本語の記事もそれなりにあります
 
 altJS: CoffeeScriptとか
 
 
-TypeScript
+* TypeScript  
+[http://www.typescriptlang.org/](http://www.typescriptlang.org/)  
+[https://npmjs.org/package/typescript](https://npmjs.org/package/typescript)
 
-* [http://www.typescriptlang.org/](http://www.typescriptlang.org/)
-* [https://npmjs.org/package/typescript](https://npmjs.org/package/typescript)
-
-WEB DB PRESS Vol.75 に TypeScript が取り上げられています
-
-* [http://gihyo.jp/magazine/wdpress/archive/2013/vol75](http://gihyo.jp/magazine/wdpress/archive/2013/vol75)
+* WEB DB PRESS Vol.75 に TypeScript が取り上げられています  
+[http://gihyo.jp/magazine/wdpress/archive/2013/vol75](http://gihyo.jp/magazine/wdpress/archive/2013/vol75)
 
 
 #### 個人的に一言
-CoffeeScript のコードって結構人によって書き方違うし
+CoffeeScript のコードって結構人によって書き方違うし  
 そもそもコンパイルするとコード汚いじゃん？
 
 
@@ -74,8 +77,8 @@ CoffeeScript のコードって結構人によって書き方違うし
 コードが複雑になり、それに応じて開発環境も複雑になってきた
 
 
-### 今年はフロントエンドにも『型』キテマス !!
-JavaScript の型って好いようにやってくれるじゃん？
+### 今年はフロントエンドにも『型』
+JavaScript の型って好いようにやってくれるじゃん？  
 JavaScript の魅力ってなんでも Object なんだしゆるくていいじゃない
 
 * 開発が複雑になり、みんなでコードに手を入れる事が多くなった
@@ -88,27 +91,28 @@ JavaScript の魅力ってなんでも Object なんだしゆるくていいじ�
 どうやら他人事じゃなくなってきた。
 
 
-## じゃあ明日から使ってみよう (導入)
+## 明日から使う為に (導入)
 
-### 対応しているIDEとエディタ
+### IDE or Editor
 
-#### Visual Studio Express 2012  
-無償開発環境 Visual Studio Express 2012 for Web  
+#### Visual Studio 2012  
+* for Windows 7
+* for Windows 8
+
+Visual Studio Express 2012 for Web  
 [http://www.microsoft.com/en-us/download/details.aspx?id=34790](http://www.microsoft.com/en-us/download/details.aspx?id=34790)
-	* for Windows 7
-	* for Windows 8
 
 
 #### JetBrains (おすすめ)
-v0.8 ちょっと古いけれど JetBrains は更新頻度が高いプロダクトなのですぐ対応する可能性が高い
 * WebStorm $49
 * PhpStorm $99
 
-	http://blog.jetbrains.com/webide/2013/02/typescript-support-in-webstorm-6/
+Windows, OSX, Linux のマルチプラットフォーム  
+v0.8 ちょっと古いけれど JetBrains は更新頻度が高いプロダクトなのですぐ対応する可能性が高い
 
 
 #### nodejs
-* grunt-typescript
+grunt-typescript
 [https://npmjs.org/package/grunt-typescript](https://npmjs.org/package/grunt-typescript)
 
 
@@ -127,8 +131,8 @@ TypeScript support for Vim
 ## WebStorm, PhpStorm で使う
 hogeStorm のアナライズ凄いです
 
-
-Demo
+	Demo
+	* コンパイルのオプション
 
 
 ts ファイルの watch 便利すぎる
@@ -147,9 +151,10 @@ watch の設定
 
 * CUI で作っている場合も nodejs があれば大丈夫。
 
-* CoffeeScript の出力した 生js ファイル汚くありませんか？ TypeScript はそんなことはありません。 
+* CoffeeScript の出力した 生js ファイル汚くありませんか？  
+TypeScript はそんなことはありません。 
 
-* 有名なJavaScriptライブラリ の 宣言ファイル沢山あります!
+* 有名なJavaScriptライブラリ の 宣言ファイル沢山あります!  
 [https://github.com/borisyankov/DefinitelyTyped](https://github.com/borisyankov/DefinitelyTyped)
 
 
@@ -175,6 +180,7 @@ watch の設定
 
 * borisyankov/DefinitelyTyped  
 [https://github.com/borisyankov/DefinitelyTyped](https://github.com/borisyankov/DefinitelyTyped)
+
 
 
 
