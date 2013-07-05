@@ -189,10 +189,9 @@ TypeScript はそんなことはありません。
 ## キャプチャ
 
 <style type="text/css">
-.img-halfsize img { width:50%;height:auto;}
+.img-halfsize img { max-width:520px; height:auto; }
 </style>
 <div class="img-halfsize">
-<img src="./_pic/ws_support_typescript.png" alt="">
 <img src="./_pic/ws_arguments_type_invalid.png" alt="">
 <img src="./_pic/ws_file_watch.png" alt="">
 <img src="./_pic/ws_files_outputs__js_and_maps.png" alt="">
