@@ -1,12 +1,3 @@
-<script type="text/javascript">
-(function(d, l){ l.setAttribute('rel', 'stylesheet');
-l.setAttribute('href', 'http://szk-engineering.com/markdown.css'); d.querySelector('head').appendChild(l); })(d = document, d.createElement('link'));
-</script>
-
-
-
-
-
 # TypeScript
 
 型を守ってSAFEコーディング
@@ -29,12 +20,7 @@ l.setAttribute('href', 'http://szk-engineering.com/markdown.css'); d.querySelect
 ###  Welcome to TypeScript
 Microsoftがオープンソースとして公開している altJS の 型付け特化のコンパイラ  
 じつは去年の2012年に登場していました。
-
-割と色んな所で名前を目にする事が多く、日本語の記事もそれなりにあります  
-現在 (2013-07-01の時点では) v0.9、今年は業務で使われるケースが多くなりそう。
-
-altJS: CoffeeScriptとか
-
+現在 (2013-07-01の時点では) v0.9になり、業務で使われるケースが多くなりそう。
 
 * TypeScript  
 [http://www.typescriptlang.org/](http://www.typescriptlang.org/)  
@@ -43,10 +29,14 @@ altJS: CoffeeScriptとか
 * WEB DB PRESS Vol.75 に TypeScript が取り上げられています  
 [http://gihyo.jp/magazine/wdpress/archive/2013/vol75](http://gihyo.jp/magazine/wdpress/archive/2013/vol75)
 
+* TypeScript Quick Guide
+[http://phyzkit.net/typescript/](http://phyzkit.net/typescript/)
+
 
 #### 個人的に一言
 CoffeeScript のコードって結構人によって書き方違うし  
-そもそもコンパイルするとコード汚いじゃん？
+コンパイルされるとコード読みづらいことで有名で  
+書き方・出力のされ方に好感を持てないかたも多い。
 
 
 ### 覚えてますか？2012年のWEB業界キーワード
@@ -79,7 +69,9 @@ CoffeeScript のコードって結構人によって書き方違うし
 
 ### 今年はフロントエンドにも『型』
 JavaScript の型って好いようにやってくれるじゃん？  
-JavaScript の魅力ってなんでも Object なんだしゆるくていいじゃない
+JavaScript の魅力ってゆるさでしょ
+
+とはいえ、
 
 * 開発が複雑になり、みんなでコードに手を入れる事が多くなった
 * 複雑で 1ヶ月前のコードとか覚えてないし
@@ -91,10 +83,12 @@ JavaScript の魅力ってなんでも Object なんだしゆるくていいじ�
 どうやら他人事じゃなくなってきた。
 
 
-## 明日から使う為に (導入)
+## Any IDE and More Editor
+おすすめは WebStorm
+でも Nodejs があれば好きな
+エディタで始められる
 
-### IDE or Editor
-
+### IDE
 #### Visual Studio 2012  
 * for Windows 7
 * for Windows 8
@@ -108,7 +102,8 @@ Visual Studio Express 2012 for Web
 * PhpStorm $99
 
 Windows, OSX, Linux のマルチプラットフォーム  
-v0.8 ちょっと古いけれど JetBrains は更新頻度が高いプロダクトなのですぐ対応する可能性が高い
+0.8対応 (2013-07-05) JetBrains は更新頻度が高い  
+プロダクトなのですぐ対応する可能性が高い
 
 
 #### nodejs
@@ -128,22 +123,46 @@ TypeScript support for Vim
 * [https://github.com/leafgarland/typescript-vim](https://github.com/leafgarland/typescript-vim)
 
 
-## WebStorm, PhpStorm で使う
+## WebStorm で使う
 hogeStorm のアナライズ凄いです
 
-	Demo
-	* コンパイルのオプション
+* コンパイルのオプション
+* ts ファイルの watch 便利
+* watch の設定
 
 
-ts ファイルの watch 便利すぎる
-watch の設定
+### tsc options
 
-
-## nodejs
 	npm install -g typescript
 
 
-## メリット
+
+	Version 0.9.0.1
+	Syntax:   tsc [options] [file ..]
+
+	Examples: tsc hello.ts
+			  tsc --out foo.js foo.ts
+			  tsc @args.txt
+
+	Options:
+	  -c, --comments              Emit comments to output
+	*  -d, --declaration           Generates corresponding .d.ts file
+	*  -b, --disallowbool          Throw error for use of deprecated "bool" type
+	*  -m, --disallowimportmodule  Throw error for use of deprecated "module" keyword when referencing an external module. Only allow "require" keyword.
+	  -e, --exec                  Execute the script after compilation
+	  -h, --help                  Print this message
+	  --module KIND               Specify module code generation: "commonjs" (default) or "amd"
+	  --nolib                     Do not include a default lib.d.ts with global declarations
+	  --out FILE|DIRECTORY        Concatenate and emit output to single file | Redirect output structure to the directory
+	  --sourcemap                 Generates corresponding .map file
+	  --target VER                Specify ECMAScript target version: "ES3" (default), or "ES5"
+	  -v, --version               Print the compiler's version: 0.9.0.1
+	  -w, --watch                 Watch input files
+	  @<file>                     Insert command line options and files from a file.
+
+
+## まとめ
+### メリット
 * CoffeeScript とは違い、普通の JavaScript の記述に近いので導入しやすい
 
 * Visual Studio 2012 (+ TypeScript for Visual Studio 2012 アドオン)  
@@ -158,8 +177,11 @@ TypeScript はそんなことはありません。
 [https://github.com/borisyankov/DefinitelyTyped](https://github.com/borisyankov/DefinitelyTyped)
 
 
-## デメリット
+### デメリット
 * コードが冗長になりやすい
+
+* CoffeeScript などとは違い便利な構文などは少ないので
+素のJavaScript を書くイメージ
 
 * JavaScript フレームワーク や、今まで作ったコード資産を導入するには手間がかかる  
 => 既存のコードは書き直してまで移行しなくても良い場面の方が多いと思います。
@@ -168,10 +190,11 @@ TypeScript はそんなことはありません。
 
 
 
-### TypeScript ドキュメント
-[http://typescript.codeplex.com/](http://typescript.codeplex.com/)
 
 ### 参考
+* TypeScript ドキュメント  
+[http://typescript.codeplex.com/](http://typescript.codeplex.com/)
+
 * TypeScript + SourceMap でデバッグしてみる  
 [http://yaakaito.org/blog/2013/03/28/typescript-with-sorucemap/](http://yaakaito.org/blog/2013/03/28/typescript-with-sorucemap/)
 
@@ -209,30 +232,13 @@ TypeScript はそんなことはありません。
 
 
 
-## CUI options
 
 
-	Version 0.9.0.1
-	Syntax:   tsc [options] [file ..]
-
-	Examples: tsc hello.ts
-			  tsc --out foo.js foo.ts
-			  tsc @args.txt
-
-	Options:
-	  -c, --comments              Emit comments to output
-	*  -d, --declaration           Generates corresponding .d.ts file
-	*  -b, --disallowbool          Throw error for use of deprecated "bool" type
-	*  -m, --disallowimportmodule  Throw error for use of deprecated "module" keyword when referencing an external module. Only allow "require" keyword.
-	  -e, --exec                  Execute the script after compilation
-	  -h, --help                  Print this message
-	  --module KIND               Specify module code generation: "commonjs" (default) or "amd"
-	  --nolib                     Do not include a default lib.d.ts with global declarations
-	  --out FILE|DIRECTORY        Concatenate and emit output to single file | Redirect output structure to the directory
-	  --sourcemap                 Generates corresponding .map file
-	  --target VER                Specify ECMAScript target version: "ES3" (default), or "ES5"
-	  -v, --version               Print the compiler's version: 0.9.0.1
-	  -w, --watch                 Watch input files
-	  @<file>                     Insert command line options and files from a file.
-
-
+<script type="text/javascript">
+(function(d, l){
+  console.log(1);
+  l.setAttribute('rel',  'stylesheet');
+  l.setAttribute('href', 'http://szk-engineering.com/markdown.css');
+  d.querySelector('head').appendChild(l);
+})(d = document, d.createElement('link'));
+</script>
