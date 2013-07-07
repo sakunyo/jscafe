@@ -226,6 +226,7 @@ CoffeeScript という"言語" ( Ruby Like )
 ### Using jQuery 2
 
 	// jQuery などのライブラリを使う場合 は declaration を読み込む
+	/// <reference path="./jquery.d.ts" />
 	var $divs = jQuery(".div"), i:number, iz:number;
 
 	console.log(jQuery);
