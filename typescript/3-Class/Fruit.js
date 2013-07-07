@@ -8,6 +8,29 @@ var __extends = this.__extends || function (d, b) {
 * User: sakuya
 * Date: 2013-07-07
 */
+/**
+* class, extends
+* 出力される JavaScript コードは Classy なコード
+* [private, public] [static]
+*/
+var MyClass = (function () {
+    function MyClass(x, _x) {
+        this.x = x;
+        this._x = _x;
+    }
+    MyClass.prototype.myMethod = function () {
+        return 123;
+    };
+    return MyClass;
+})();
+
+var myclass = new MyClass(10, "private value");
+
+console.log(myclass.myMethod());
+console.log(myclass.x);
+
+// private を指定した場合には外側からアクセスするとError
+// console.log( myclass._x ); // Error
 var Fruit = (function () {
     function Fruit(name, color) {
         this.name = name;

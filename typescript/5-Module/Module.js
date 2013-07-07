@@ -4,6 +4,12 @@
 * User: sakuya sugo
 * Date: 2013-07-07
 */
+/**
+* Module は Internal と External の 2 種
+* Internal はネームスペースを提供
+* External は CommonJS や RequireJS に対応する
+*/
+// Internal Module
 var MyModule;
 (function (MyModule) {
     var dntExport = (function () {
@@ -12,7 +18,6 @@ var MyModule;
         }
         return dntExport;
     })();
-
     var MyExportClass = (function () {
         function MyExportClass() {
             return this;
@@ -20,13 +25,5 @@ var MyModule;
         return MyExportClass;
     })();
     MyModule.MyExportClass = MyExportClass;
-
-    var InnerModule;
-    (function (InnerModule) {
-        function exportFunc() {
-            return 123;
-        }
-        InnerModule.exportFunc = exportFunc;
-    })(InnerModule || (InnerModule = {}));
 })(MyModule || (MyModule = {}));
 //@ sourceMappingURL=Module.js.map

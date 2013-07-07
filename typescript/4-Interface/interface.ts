@@ -7,10 +7,10 @@
 
 
 /**
- * interface
- *
+ * Interface
  * オブジェクトの持っている特徴を抽象化したもの
  * クラス以外にも適用できる
+ * 慣例的に IMyInterface のように I を接頭辞にする
  */
 interface IFruit {
   name:   string;  // フルーツ名

@@ -5,8 +5,45 @@
  * Date: 2013-07-07
  */
 
-class MyTypes {
 
+
+/**
+ * Type は大きく分けて、Primitive TypeとObject Type
+ *
+ * Primitive Types
+ * [string, number, boolean, void, null, undefined, Enum ...]
+ *
+ * var 宣言した値などは暗黙的に型が決まる
+ * 他の型の値を代入できない
+ */
+var varString = "String"; // 暗黙的に型を宣言
+// varString = 123; // Error
+
+var varString2:string = "String2"; // 型を明示
+
+var varNumber = 123;
+var varNumber2:number = 123;
+
+
+/**
+ * Array
+ * 型を束縛しない any
+ */
+var varArray  = [ 1, 2, 3 ]; // 暗黙的に number[]
+
+var varArray2 = [ 1, "2",
+  { x:"string" }, function () {} ]; // 暗黙的に {}[]
+
+var varArray3:any[] = [ 1, "2", function () {} ]; // 明示 any[]
+
+/**
+ * Object
+ */
+var varObject = { x:"x", y:123 };
+
+
+
+class MyTypes {
 
   public myString:string;
 
@@ -51,32 +88,3 @@ class MyTypes {
   }
 
 }
-
-
-var varString = "String";
-var varString2:string = "String2";
-
-var varNumber = 123;
-var varNumber2:number = 123;
-
-var varArray  = [1, 2, 3];
-var varArray2 = [1, "2", 3];
-var varArray3:any[] = [1, "2", function hoge() { /*snip*/ }];
-
-var varObject = { x:"x", y:123 };
-
-
-
-function getCanvasElement () {
-  return document.createElement("canvas");
-}
-function getCanvasElementContext () {
-  var canvas = getCanvasElement();
-  return canvas.getContext("2d");
-}
-
-
-
-
-
-
