@@ -4,23 +4,32 @@
 
 
 ## Agenda
-
-* TypeScript について
-* 導入する前に
+* TypeScript
+    * Welcome to TypeScript
+* Any IDE and More Editor
+    * Visual Studio 2012
+    * JetBrains
+    * nodejs
+    * Sublime Text $70
+    * Vim
+* WebStorm And TypeScript
+* まとめ
+    * メリット
+    * デメリット
+    * 参考
 
 
 ## 自己紹介
-
-てきとうに...
-
+さらっと
 
 
-## TypeScriptについておさらい
 
-###  Welcome to TypeScript
-Microsoftがオープンソースとして公開している altJS の 型付け特化のコンパイラ  
-じつは去年の2012年に登場していました。
-現在 (2013-07-01の時点では) v0.9になり、業務で使われるケースが多くなりそう。
+## TypeScript
+
+### Welcome to TypeScript
+Microsoftがオープンソースとして公開  
+altJS の 型付け特化のコンパイラ  
+2012年に登場し、現在 (2013-07-01の時点では) v0.9
 
 * TypeScript  
 [http://www.typescriptlang.org/](http://www.typescriptlang.org/)  
@@ -33,13 +42,15 @@ Microsoftがオープンソースとして公開している altJS の 型付け
 [http://phyzkit.net/typescript/](http://phyzkit.net/typescript/)
 
 
-#### 個人的に一言
-CoffeeScript のコードって結構人によって書き方違うし  
-コンパイルされるとコード読みづらいことで有名で  
-書き方・出力のされ方に好感を持てないかたも多い。
+CoffeeScript の文法は融通がきく反面  
+人によって書き方違いも多く一貫性は保ちにくい  
+コンパイルされたコードは読み辛い傾向
+
+CoffeeScript という"言語"
 
 
-### 覚えてますか？2012年のWEB業界キーワード
+
+### 2012年のWEB業界キーワード
 * Github
 * Pull Request
 * マサカリ族
@@ -67,7 +78,7 @@ CoffeeScript のコードって結構人によって書き方違うし
 コードが複雑になり、それに応じて開発環境も複雑になってきた
 
 
-### 今年はフロントエンドにも『型』
+### 2013年はフロントエンドにも『型』
 JavaScript の型って好いようにやってくれるじゃん？  
 JavaScript の魅力ってゆるさでしょ
 
@@ -88,8 +99,8 @@ JavaScript の魅力ってゆるさでしょ
 でも Nodejs があれば好きな
 エディタで始められる
 
-### IDE
-#### Visual Studio 2012  
+
+### Visual Studio 2012  
 * for Windows 7
 * for Windows 8
 
@@ -97,7 +108,7 @@ Visual Studio Express 2012 for Web
 [http://www.microsoft.com/en-us/download/details.aspx?id=34790](http://www.microsoft.com/en-us/download/details.aspx?id=34790)
 
 
-#### JetBrains (おすすめ)
+### JetBrains (おすすめ)
 * WebStorm $49
 * PhpStorm $99
 
@@ -106,13 +117,13 @@ Windows, OSX, Linux のマルチプラットフォーム
 プロダクトなのですぐ対応する可能性が高い
 
 
-#### nodejs
+### nodejs
 grunt-typescript
 [https://npmjs.org/package/grunt-typescript](https://npmjs.org/package/grunt-typescript)
 
 
-#### Sublime Text $70
-#### Vim
+### Sublime Text $70
+### Vim
 nodejs のコンパイラで環境を手に入れる
 
 * TypeScript support for Sublime Text  
@@ -125,6 +136,7 @@ TypeScript support for Vim
 
 ## WebStorm で使う
 hogeStorm のアナライズ凄いです
+
 
 * コンパイルのオプション
 * ts ファイルの watch 便利
