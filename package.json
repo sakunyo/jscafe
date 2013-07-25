@@ -1,0 +1,24 @@
+{
+  "name": "jscafe",
+  "version": "0.0.0",
+  "description": "typescript demo",
+  "main": "",
+  "scripts": {
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/sakunyo/jscafe.git"
+  },
+  "keywords": [
+    "typescript",
+    "demo"
+  ],
+  "author": "sakuya sugo",
+  "license": "BSD",
+  "devDependencies": {
+    "typescript" : "*",
+    "grunt-typescript" : "*",
+    "grunt": "~0.4.1",
+    "grunt-contrib-watch": "*"
+  }
+}
